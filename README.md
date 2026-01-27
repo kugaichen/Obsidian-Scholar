@@ -2,7 +2,7 @@
 
 A Literature Reading, Knowledge Organization, and Time Management Workflow with Zotero and Obsidian
 
-Obsidian-Scholar是一套面向研究型阅读的**Zotero–Obsidian 联动工作流**，目标是在不增加阅读负担的前提下，实现：
+Obsidian-Scholar是一套面向研究型阅读的**Zotero–Obsidian联动工作流**，目标是在不增加阅读负担的前提下，实现：
 
 - 在 **Zotero中完成自动化的文献阅读与标注**
 - 在**Obsidian中自动生成可检索的研究笔记**
@@ -198,16 +198,15 @@ zotero_config/actions-zotero.yml
   obsidian-scholar/
   ├── README.md
   ├── zotero_config/
-  │  └── actions-zotero.yml  //插件配置文件定义高亮颜色与语义标签之间的映射规则
+  │  └── actions-zotero.yml                     //插件配置文件定义高亮颜色与语义标签之间的映射规则
   ├── obsidian_config/
-  │  └── dataview-theme.css  //表格与视图的自定义样式文件，改进显示效果
+  │  └── dataview-theme.css                     //表格与视图的自定义样式文件，改进显示效果
   ├── source/
   │   ├── _templates/
-  │   │   └── Zotero_Import_template.md  //Note模板，定义笔记的结构与字段
-  │   │   └── Tags_updating_auto_template.md  //动作模板，关联快捷键更新标签
-  |	└── Paper_Reading_Map.md  //基于Dataview的文献全局视图
-  |	└── 我的时间计划.md  //研究与项目时间规划笔记
-  |	└── TimeLine_for_everything.md  //DataviewJS时间线视图
+  │   │   └── Zotero_Import_template.md         //Note模板，定义笔记的结构与字段
+  │   │   └── Tags_updating_auto_template.md    //动作模板，关联快捷键更新标签
+  |	└── Paper_Reading_Map.md                    //基于Dataview的文献全局视图
+  |	└── 我的时间计划.md                          //研究与项目时间规划笔记
+  |	└── TimeLine_for_everything.md              //DataviewJS时间线视图
   └── LICENSE
-  
   ```
