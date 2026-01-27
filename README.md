@@ -205,8 +205,8 @@ zotero_config/actions-zotero.yml
   │   ├── _templates/
   │   │   └── Zotero_Import_template.md         //Note模板，定义笔记的结构与字段
   │   │   └── Tags_updating_auto_template.md    //动作模板，关联快捷键更新标签
-  |	└── Paper_Reading_Map.md                    //基于Dataview的文献全局视图
-  |	└── 我的时间计划.md                          //研究与项目时间规划笔记
-  |	└── TimeLine_for_everything.md              //DataviewJS时间线视图
+  |	└── Paper_Reading_Map.md                  //基于Dataview的文献全局视图
+  |	└── 我的时间计划.md                        //研究与项目时间规划笔记
+  |	└── TimeLine_for_everything.md            //DataviewJS时间线视图
   └── LICENSE
   ```
