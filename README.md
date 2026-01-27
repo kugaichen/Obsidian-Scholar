@@ -38,7 +38,7 @@ Obsidian-Scholar是一套面向研究型阅读的**Zotero–Obsidian 联动工�
 4. 基于模板生成标准化Paper Note
 5. 通过Dataview构建跨文献的结构化视图
 
-<img src="assets\workflow.png" alt="image-20260127152312407" style="zoom: 67%;" />
+<img src="assets\workflow.png" alt="image-20260127152312407" style="zoom: 67%" />
 
 ---
 
@@ -56,15 +56,15 @@ Obsidian-Scholar是一套面向研究型阅读的**Zotero–Obsidian 联动工�
 
   - Actions and Tags for Zotero（用于基于颜色自动打标签）
 
-    <img src="assets\action.png" alt="image-20260127153137617" style="zoom: 35%;" />
+    <img src="assets\action.png" alt="image-20260127153137617" width="700" />
 
   - Better BibTex for Zotero（用于规范引用格式）
 
-    <img src="assets\bibtex.png" alt="image-20260127153028463" style="zoom: 35%;" />
+    <img src="assets\bibtex.png" alt="image-20260127153028463" width="700" />
 
   - Ethereal Style（用于自定义标签样式）
 
-    <img src="assets\style.png" alt="image-20260127153059400" style="zoom:35%;" />
+    <img src="assets\style.png" alt="image-20260127153059400" width="700" />
 
 #### 3.3 动作配置文件
 
@@ -94,7 +94,7 @@ zotero_config/actions-zotero.yml
 
 - 基础配置：
 
-  <img src="assets\integration_1.png" alt="image-20260127155206020" style="zoom: 35%;" />
+  <img src="assets\integration_1.png" alt="image-20260127155206020" width="700" />
 
 - 文件与模板导入配置
 
@@ -103,7 +103,7 @@ zotero_config/actions-zotero.yml
   - Output Path用于统一生成笔记的命名与路径结构
   - Template File用于定义导入后Paper Note的整体格式
 
-    <img src="assets\integration.png" alt="image-20260127155247825" style="zoom: 35%;" />
+    <img src="assets\integration.png" alt="image-20260127155247825" width="700" />
 
  - Paper Note模板文件：
         ```
@@ -123,7 +123,7 @@ zotero_config/actions-zotero.yml
 
 - Obsidian 外观样式（CSS）:
 
-  <img src="assets\css.png" alt="image-20260127201303520" style="zoom: 30%;" />
+  <img src="assets\css.png" alt="image-20260127201303520" width="700" />
 
   ```
   obsidian_config/dataview-theme.css
@@ -142,11 +142,11 @@ zotero_config/actions-zotero.yml
 
 - Templater配置：
 
-  <img src="assets\Templater_1.png" alt="image-20260127204954959" style="zoom:40%;" />
+  <img src="assets\Templater_1.png" alt="image-20260127204954959" width="700" />
 
-  <img src="assets\Templater_2.png" alt="image-20260127205015945" style="zoom:40%;" />
+  <img src="assets\Templater_2.png" alt="image-20260127205015945" width="700" />
 
-  <img src="assets\Templater_3.png" alt="image-20260127205028210" style="zoom: 40%;" />
+  <img src="assets\Templater_3.png" alt="image-20260127205028210" width="700" />
 
 - Templater模板文件：
 
@@ -158,9 +158,9 @@ zotero_config/actions-zotero.yml
 
   - 利用Templater对模板的操作进行快捷键绑定：
 
-    <img src="assets\tags_1.png" alt="image-20260127205756521" style="zoom:40%;" />
+    <img src="assets\tags_1.png" alt="image-20260127205756521" width="700" />
 
-    <img src="assets\tags_2.png" alt="image-20260127205815310" style="zoom:40%;" />
+    <img src="assets\tags_2.png" alt="image-20260127205815310" width="700" />
 
   - 使用快捷键即可以在Paper Note中将topics和status中的元数据直接填入tags（标签中）
   
@@ -207,7 +207,7 @@ zotero_config/actions-zotero.yml
   │   │   └── Tags_updating_auto_template.md  //动作模板，关联快捷键更新标签
   |	└── Paper_Reading_Map.md  //基于Dataview的文献全局视图
   |	└── 我的时间计划.md  //研究与项目时间规划笔记
-  |	└── TimeLine_for_everything.md //DataviewJS时间线视图
+  |	└── TimeLine_for_everything.md  //DataviewJS时间线视图
   └── LICENSE
   
   ```
