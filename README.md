@@ -8,11 +8,11 @@ Obsidian-Scholar是一套面向研究型阅读的**Zotero–Obsidian 联动工�
 - 在**Obsidian中自动生成可检索的研究笔记**
 - 构建**基于文献的可视化整理与检索表格**
 
-  !<img src="assets\paper_map.png" al="image-20260127201813892"  />
+  <img src="assets\paper_map.png" al="image-20260127201813892"  />
   
 - 根据计划**自动化生成时间线可视化表**
 
-  ![image-20260127211004304](assets\Timeline.png)
+  <img src="assets\Timeline.png" alt="image-20260127211004304" />
 
 ---
 
@@ -38,7 +38,7 @@ Obsidian-Scholar是一套面向研究型阅读的**Zotero–Obsidian 联动工�
 4. 基于模板生成标准化Paper Note
 5. 通过Dataview构建跨文献的结构化视图
 
-<img src="assets\workflow.png" alt="image-20260127152312407" style="zoom:80%;" />
+<img src="assets\workflow.png" alt="image-20260127152312407" style="zoom: 67%;" />
 
 ---
 
@@ -56,15 +56,15 @@ Obsidian-Scholar是一套面向研究型阅读的**Zotero–Obsidian 联动工�
 
   - Actions and Tags for Zotero（用于基于颜色自动打标签）
 
-    <img src="assets\action.png" alt="image-20260127153137617" style="zoom:43%;" />
+    <img src="assets\action.png" alt="image-20260127153137617" style="zoom: 35%;" />
 
   - Better BibTex for Zotero（用于规范引用格式）
 
-    <img src="assets\bibtex.png" alt="image-20260127153028463" style="zoom: 43%;" />
+    <img src="assets\bibtex.png" alt="image-20260127153028463" style="zoom: 35%;" />
 
   - Ethereal Style（用于自定义标签样式）
 
-    <img src="assets\style.png" alt="image-20260127153059400" style="zoom:43%;" />
+    <img src="assets\style.png" alt="image-20260127153059400" style="zoom:35%;" />
 
 #### 3.3 动作配置文件
 
@@ -94,7 +94,7 @@ zotero_config/actions-zotero.yml
 
 - 基础配置：
 
-  <img src="assets\integration_1.png" alt="image-20260127155206020" style="zoom: 44%;" />
+  <img src="assets\integration_1.png" alt="image-20260127155206020" style="zoom: 35%;" />
 
 - 文件与模板导入配置
 
@@ -103,14 +103,12 @@ zotero_config/actions-zotero.yml
   - Output Path用于统一生成笔记的命名与路径结构
   - Template File用于定义导入后Paper Note的整体格式
 
-    <img src="assets\integration.png" alt="image-20260127155247825" style="zoom: 50%;" />
+    <img src="assets\integration.png" alt="image-20260127155247825" style="zoom: 35%;" />
 
  - Paper Note模板文件：
-
         ```
         obsidian_config/Zotero_Import_template.md
         ```
-     
   - 可视化效果：
 
     <img src="assets\note.png" alt="image-20260127201057387"  />
@@ -125,7 +123,7 @@ zotero_config/actions-zotero.yml
 
 - Obsidian 外观样式（CSS）:
 
-  <img src="assets\css.png" alt="image-20260127201303520" style="zoom: 38%;" />
+  <img src="assets\css.png" alt="image-20260127201303520" style="zoom: 30%;" />
 
   ```
   obsidian_config/dataview-theme.css
@@ -144,11 +142,11 @@ zotero_config/actions-zotero.yml
 
 - Templater配置：
 
-  <img src="assets\Templater_1.png" alt="image-20260127204954959" style="zoom:50%;" />
+  <img src="assets\Templater_1.png" alt="image-20260127204954959" style="zoom:40%;" />
 
-  <img src="assets\Templater_2.png" alt="image-20260127205015945" style="zoom:50%;" />
+  <img src="assets\Templater_2.png" alt="image-20260127205015945" style="zoom:40%;" />
 
-  <img src="assets\Templater_3.png" alt="image-20260127205028210" style="zoom: 50%;" />
+  <img src="assets\Templater_3.png" alt="image-20260127205028210" style="zoom: 40%;" />
 
 - Templater模板文件：
 
@@ -160,9 +158,9 @@ zotero_config/actions-zotero.yml
 
   - 利用Templater对模板的操作进行快捷键绑定：
 
-    <img src="assets\tags_1.png" alt="image-20260127205756521" style="zoom:50%;" />
+    <img src="assets\tags_1.png" alt="image-20260127205756521" style="zoom:40%;" />
 
-    <img src="assets\tags_2.png" alt="image-20260127205815310" style="zoom:50%;" />
+    <img src="assets\tags_2.png" alt="image-20260127205815310" style="zoom:40%;" />
 
   - 使用快捷键即可以在Paper Note中将topics和status中的元数据直接填入tags（标签中）
   
@@ -191,7 +189,7 @@ zotero_config/actions-zotero.yml
 
 #### 5.3 可视化效果
 
-![image-20260127211004304](assets\Timeline.png)
+<img src="assets\Timeline.png" alt="image-20260127211004304" />
 
 
 ### 6. 文件结构
