@@ -1,0 +1,20 @@
+type: ActionsTagsBackup
+author: kugaichen
+platformVersion: 7.0.32
+pluginVersion: 2.2.4
+timestamp: '2026-01-27T07:39:09.883Z'
+actions:
+  1740820104255-ooVH0pbo:
+    event: 4
+    operation: 4
+    data: "/**\n * 注释：根据注释颜色增加标签\n */\n\nif (!item) {\n  return;\n}\n\nlet topItem = Zotero.Items.getTopLevel([item])[0];\n\nreturn await EditAnnotation(item);\n\nasync function EditAnnotation(annotationItem) {\n  if (!annotationItem.isAnnotation()) {\n    return;\n  }\n  if (annotationItem.annotationColor == null) {\n    return \"未读取到注释颜色\";\n  }\n  // Fixed: Added comma between parameters\n  annotationItem.annotationComment= await FormatText(annotationItem.annotationColor, annotationItem.annotationComment);\n  return \"更新文献密码注释标签\";\n}\n\nasync function FormatText(color, text) {\n  let tag = \"\";\n  tag = color === \"#ffd6a5\" ? \" #背景/Background\" :\n        color === \"#ffadad\" ? \" #动机/Motivation\" :\n        color === \"#caffbf\" ? \" #方法/Method\" :\n        color === \"#ffd400\" ? \" #值得学习的写法/写作参考\" :\n\tcolor === \"#b4e4ef\" ? \" #实验/Experiment\" :\n\tcolor === \"#ffc6ff\" ? \" #问题/研究现状/Gap\" :\n        color === \"#bdb2ff\" ? \" #贡献/Contribution\" :\n        color === \"#ffff86\" ? \" #重点/感兴趣的地方\" : tag;\n  if (!text) {\n\treturn tag;\n  } else {\n\treturn text + \"\\n\" + tag;\n  }\n}"
+    shortcut: ''
+    enabled: true
+    menu: ''
+    name: 根据颜色添加标签
+    showInMenu:
+      item: false
+      collection: false
+      tools: false
+      reader: false
+      readerAnnotation: false

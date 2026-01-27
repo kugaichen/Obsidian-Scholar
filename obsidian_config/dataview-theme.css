@@ -1,0 +1,174 @@
+.table-view-table {
+    border-collapse: collapse !important;
+    border: 1px solid #e0e0e0 !important;
+    table-layout: fixed !important;
+    width: 100% !important;
+    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05); /* 增加轻微阴影，更有质感 */
+}
+
+/* ==================== 2. 单元格统一设置 ==================== */
+.table-view-table th, 
+.table-view-table td {
+    border: 1px solid #e0e0e0 !important;
+    padding: 8px 10px !important; /* 增加内边距，呼吸感更强 */
+    vertical-align: middle !important;
+    word-wrap: break-word !important;
+    overflow: hidden;
+    font-size: 14px !important; /* 调整为14px，信息密度更合适 */
+    line-height: 1.6 !important;
+    color: #374151; /* 深灰色，比纯黑柔和 */
+}
+
+/* ==================== 3. 表头美化 ==================== */
+.table-view-table > thead > tr > th {
+    background-color: #f3f4f6 !important; /* 更现代的浅灰色 */
+    color: #111827 !important;
+    font-weight: 600 !important;
+    border-bottom: 2px solid #d1d5db !important;
+    text-align: left;
+    vertical-align: middle !important;
+    font-size: 15px !important;
+}
+
+/* ==================== 4. 列表样式控制 ==================== */
+
+/* 1. 默认情况：消除列表样式 (用于会议、主题、状态等标签列) */
+.table-view-table td ul {
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    text-align: left !important;
+}
+.table-view-table td ul li {
+    margin: 0 !important;
+    padding: 0 !important;
+    display: inline !important; /* 默认横向排列 */
+}
+
+/* 2. 特殊处理：针对 优点(8)、缺点(9)、感想(10) 列，保持垂直排列但去掉圆点 */
+.table-view-table td:nth-child(8) ul,
+.table-view-table td:nth-child(9) ul,
+.table-view-table td:nth-child(10) ul {
+    list-style: none !important;     /* 关键修改：去掉圆点 */
+    padding-left: 0 !important;      /* 去掉左侧缩进，顶格显示 */
+    margin: 2px 0 !important;
+    display: block !important;       /* 确保 ul 是块级元素 */
+}
+
+.table-view-table td:nth-child(8) ul li,
+.table-view-table td:nth-child(9) ul li,
+.table-view-table td:nth-child(10) ul li {
+    display: block !important;       /* 关键修改：强制垂直分行显示 */
+    margin-bottom: 4px !important;   /* 增加行间距 */
+    line-height: 1.4 !important;
+    text-align: left !important;
+}
+
+
+/* ==================== 5. 各列特定样式 ==================== */
+
+/* --- 第1列：File (链接) --- */
+.table-view-table td:nth-child(1) a {
+    color: #6b7280 !important; /* 浅灰色链接，不抢眼 */
+    text-decoration: none !important;
+    font-size: 13px !important;
+}
+
+/* --- 第2列：标题 (核心内容) --- */
+.table-view-table td:nth-child(2) a {
+    color: #2563eb !important; /* 鲜艳的蓝色，突出可点击 */
+    font-weight: 600 !important;
+    text-decoration: none !important;
+    font-size: 13px !important;
+}
+.table-view-table td:nth-child(2) a:hover {
+    text-decoration: underline !important;
+}
+
+/* --- 第3列：时间 (原第4列，现前移) --- */
+.table-view-table td:nth-child(3) {
+    text-align: center !important;
+    font-family: Consolas, monospace;
+    color: #666;
+    font-size: 15px !important;
+}
+
+/* --- 第4列：会议 --- */
+.table-view-table td:nth-child(4) {
+    color: #d97706 !important;
+    font-weight: 500;
+    font-size: 14px !important;
+}
+.table-view-table td:nth-child(4) a.tag,
+.table-view-table td:nth-child(4) li {
+    background-color: transparent !important;
+    color: #d97706 !important;
+    text-decoration: none !important;
+    padding: 0 4px 0 0 !important;
+    border: none !important;
+    display: inline-block !important;
+    white-space: normal !important;
+}
+
+/* --- 第5列：主题 --- */
+.table-view-table td:nth-child(5) a.tag,
+.table-view-table td:nth-child(5) li {
+    background-color: transparent !important;
+    color: #059669 !important;
+    text-decoration: none !important;
+    padding: 0 4px 0 0 !important;
+    font-size: 14px !important;
+    border: none !important;
+    display: inline-block !important;
+    white-space: normal !important;
+}
+
+/* --- 第6列：状态 --- */
+.table-view-table td:nth-child(6) a.tag,
+.table-view-table td:nth-child(6) li {
+    background-color: transparent !important;
+    color: #7c3aed !important;
+    text-decoration: none !important;
+    padding: 0 4px 0 0 !important;
+    font-size: 13px !important;
+    border: none !important;
+    display: inline-block !important;
+    white-space: normal !important;
+}
+
+/* --- 特殊状态高亮：需精读/已精读 改为红色 --- */
+.table-view-table td:nth-child(6) a.tag[href="#需精读"],
+.table-view-table td:nth-child(6) a.tag[href="#已精读"] {
+    color: #e93030 !important; /* 玫瑰红，醒目且不刺眼 */
+    font-weight: 500 !important;
+}
+
+/* ==================== 6. 列宽分配 (重新计算总和100%) ==================== */
+/* 假设列顺序：File | 标题 | 时间 | 会议 | 主题 | 状态 | 描述 | 优点 | 缺点 | 感想 */
+
+/* 1. File (小图标/链接) */
+.table-view-table th:nth-child(1), .table-view-table td:nth-child(1) { width: 7% !important; }
+
+/* 2. 标题 (加宽，这是最重要的) */
+.table-view-table th:nth-child(2), .table-view-table td:nth-child(2) { width: 15% !important; }
+
+/* 3. 时间 */
+.table-view-table th:nth-child(3), .table-view-table td:nth-child(3) { width: 3.5% !important; }
+
+/* 4. 会议 */
+.table-view-table th:nth-child(4), .table-view-table td:nth-child(4) { width: 6% !important; }
+
+/* 5. 主题 */
+.table-view-table th:nth-child(5), .table-view-table td:nth-child(5) { width: 8% !important; }
+
+/* 6. 状态 */
+.table-view-table th:nth-child(6), .table-view-table td:nth-child(6) { width: 5% !important; }
+
+/* 7. 一句话描述 (加宽) */
+.table-view-table th:nth-child(7), .table-view-table td:nth-child(7) { width: 15% !important; }
+
+/* 8-10. 优/缺/感 (剩余空间均分) */
+.table-view-table th:nth-child(8), .table-view-table td:nth-child(8) { width: 15% !important; }
+.table-view-table th:nth-child(9), .table-view-table td:nth-child(9) { width: 15% !important; }
+.table-view-table th:nth-child(10), .table-view-table td:nth-child(10) { width: 15% !important; }
