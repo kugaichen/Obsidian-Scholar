@@ -7,11 +7,15 @@ Obsidian-Scholar是一套面向研究型阅读的**Zotero–Obsidian联动工作
 - 在 **Zotero中根据颜色标记自动完成类别标注**
 - 在**Obsidian中根据模板生成可检索的阅读笔记**
 - 构建**基于文献笔记自动生成的可视化检索表格**
+  - 在File中对应的每个笔记的md文件，点击可跳转
+  - 在标题中对应的每篇文献的title，点击可直接跳转zotero进行pdf阅读（得是最新版的zotero）
+  - 主题和状态都是以#标签的形式存在，其目的是为了利用obsidian的双向连接和图谱，这样文献积累多了以后，可以直接对同类别的文献进行分类查找和总览
+  - 一句话描述/优点/缺点/感想：这些是需要手动在笔记中按照模板进行填写的，目的是为了阅读后思考，同时方便后期直接看该Map快速cache
 
   <img src="assets\paper_map.png" al="image-20260127201813892"  />
   
 - 根据计划**自动化生成时间线可视化表**
-
+  - 该模式同样基于模板进行实现，在不同时间节点下写下目标任务，可以自动生成时间线，同时计算时间间隔，并不同颜色标注
   <img src="assets\Timeline.png" alt="image-20260127211004304" />
 
 ---
@@ -32,11 +36,11 @@ Obsidian-Scholar是一套面向研究型阅读的**Zotero–Obsidian联动工作
 
 整个系统由 Zotero 与 Obsidian 协同完成，其逻辑流程如下：
 
-1. 在 Zotero中阅读PDF并进行颜色标注
-2. 颜色→ 语义标签→元数据注释（自动完成）
-3. Obsidian定期拉取文献与新注释
-4. 基于模板生成标准化Paper Note
-5. 通过Dataview构建跨文献的结构化视图
+1. 在 Zotero中阅读PDF并进行颜色标注（Zotero中主要是进行阅读和批注）
+2. Obsidian中会根据Zotero中批注的颜色-语义标签按照模板自动生成元数据（主要通过Zotero-Obsidian的联动实现）
+3. 基于模板生成标准化Paper Note（除了Zotero的元数据外，本工作流的核心更专注于思考-总结-整理，因此针对我个人，我需要对读过的文献进行总结，所以在Obsidian中还需要添加思考内容，基于模板格式填写）
+4. Obsidian定期拉取文献与新注释（文献阅读习惯）
+5. 通过Dataview构建跨文献的结构化视图（思考-总结-整理的可视化展示）
 
 <img src="assets\workflow.png" alt="image-20260127152312407" style="zoom: 67%" />
 
