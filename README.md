@@ -4,9 +4,9 @@ A Literature Reading, Knowledge Organization, and Time Management Workflow with 
 
 Obsidian-Scholar是一套面向研究型阅读的**Zotero–Obsidian联动工作流**，目标是在不增加阅读负担的前提下，实现：
 
-- 在 **Zotero中完成自动化的文献阅读与标注**
-- 在**Obsidian中自动生成可检索的研究笔记**
-- 构建**基于文献的可视化整理与检索表格**
+- 在 **Zotero中根据颜色标记自动完成类别标注**
+- 在**Obsidian中根据模板生成可检索的阅读笔记**
+- 构建**基于文献笔记自动生成的可视化检索表格**
 
   <img src="assets\paper_map.png" al="image-20260127201813892"  />
   
